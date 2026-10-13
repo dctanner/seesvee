@@ -1,0 +1,9 @@
+product,price,qty,description
+Widget,9.99,3,A small widget
+Gadget,19.99,2,"A gadget, with a comma"
+Gizmo,4.50,7,Has an unquoted, comma in it
+Doohickey,1.25
+Thingamajig,3.00,1,He said "hello" loudly
+Whatsit,"2.00"x,5,Text after closing quote
+Contraption,15.00,1,"Never closed quote
+Sprocket,0.75,40,Normal row again

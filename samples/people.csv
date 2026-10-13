@@ -1,0 +1,14 @@
+id,name,email,city,age,salary,joined,notes
+1,Ada Lovelace,ada@example.com,London,36,"$120,000",2021-03-14,"Wrote the first ""program"""
+2,Grace Hopper,grace@example.com,New York,85,"$135,500",2019-07-01,Compilers
+3,Alan Turing,alan@example.com,Manchester,41,"$128,250",2020-11-23,
+4,Katherine Johnson,katherine@example.com,Hampton,101,"$99,000",2018-02-08,"Orbital mechanics, trajectories"
+5,Linus Torvalds,linus@example.com,Portland,54,"$150,000",2022-05-30,Kernel
+6,Margaret Hamilton,margaret@example.com,Boston,87,"$142,000",2017-09-12,"Apollo guidance
+software lead"
+7,Tim Berners-Lee,tim@example.com,Geneva,68,"$131,000",2016-01-19,WWW
+8,Barbara Liskov,barbara@example.com,Boston,84,"$140,000",2015-04-04,Substitution principle
+9,Dennis Ritchie,dennis@example.com,Murray Hill,70,"$125,000",2014-10-10,C language
+10,Edsger Dijkstra,edsger@example.com,Austin,72,"$118,000",2013-06-21,Shortest paths
+11,file10,f10@example.com,Austin,30,1000,2020-01-01,natural sort check
+12,file2,f2@example.com,Austin,31,999.5,2020-01-02,natural sort check

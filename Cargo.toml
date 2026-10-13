@@ -1,0 +1,34 @@
+[package]
+name = "seesvee"
+version = "0.1.0"
+edition = "2024"
+description = "A minimalist, fast CSV viewer and editor"
+repository = "https://github.com/dctanner/seesvee"
+license = "MIT"
+
+[dependencies]
+gpui = { git = "https://github.com/zed-industries/zed", rev = "7f7520b98ed1a0ce03dab1d5ddcb87163f1bcdb8", features = ["font-kit"] }
+gpui_platform = { git = "https://github.com/zed-industries/zed", rev = "7f7520b98ed1a0ce03dab1d5ddcb87163f1bcdb8", features = ["font-kit"] }
+memchr = "2"
+csv = "1.3"
+anyhow = "1"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+core-foundation = "0.10"
+
+[features]
+# Compile Metal shaders at runtime so the build does not need Xcode's Metal toolchain.
+# Build with `--no-default-features` to precompile them instead.
+default = ["runtime_shaders"]
+runtime_shaders = ["gpui_platform/runtime_shaders"]
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+opt-level = 3
+
+[profile.dev.package."*"]
+opt-level = 2
+
+[dev-dependencies]
+gpui = { git = "https://github.com/zed-industries/zed", rev = "7f7520b98ed1a0ce03dab1d5ddcb87163f1bcdb8", features = ["font-kit", "test-support"] }
