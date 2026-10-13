@@ -3,6 +3,8 @@
 A minimalist, fast CSV viewer and editor for macOS, written in Rust with
 [gpui](https://github.com/zed-industries/zed/tree/main/crates/gpui).
 
+![Seesvee showing a CSV sorted by age, with the filter popover open on the city column](assets/screenshot.jpg)
+
 ## Download
 
 **[Download Seesvee for macOS (Apple Silicon)](https://github.com/dctanner/seesvee/releases/latest/download/Seesvee-macos-arm64.zip)**
